@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chandan Chhouda | Senior Frontend Engineer — React, TypeScript & Micro-Frontends</title>
+  <meta name="description" content="Senior Frontend Engineer with 6+ years building React and TypeScript UIs for high-volume CRM and SaaS products. Specialised in Webpack Module Federation, micro-frontends, and real-time interfaces.">
+  <meta name="author" content="Chandan Chhouda">
+  <meta property="og:title" content="Chandan Chhouda | Senior Frontend Engineer">
+  <meta property="og:description" content="6+ years building high-performance React & TypeScript interfaces for complex, real-time products.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Chandan Chhouda","jobTitle":"Senior Frontend Engineer","email":"chandanchhouda.cc@gmail.com","url":"https://chandancc.dev","address":{"@type":"PostalAddress","addressLocality":"Bengaluru","addressCountry":"IN"},"sameAs":["https://linkedin.com/in/chandancc","https://github.com/chandanCC"]}</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LEFT SOCIAL STRIP -->
+  <aside class="left-strip">
+    <div class="strip-line"></div>
+    <div class="strip-icons">
+      <a href="https://github.com/chandanCC" target="_blank" rel="noopener" class="strip-icon" title="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/chandancc" target="_blank" rel="noopener" class="strip-icon" title="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <a href="mailto:chandanchhouda.cc@gmail.com" class="strip-icon" title="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+    </div>
+  </aside>
+
+  <!-- TOP NAV -->
+  <nav class="topnav">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-icon">
+        <img src="logo-default.svg" alt="CC" class="logo-svg" />
+      </span>
+      CC
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active"><span class="hash">#</span>home</a></li>
+      <li><a href="projects.html"><span class="hash">#</span>projects</a></li>
+      <li><a href="about.html"><span class="hash">#</span>about-me</a></li>
+      <li><a href="contacts.html"><span class="hash">#</span>contacts</a></li>
+    </ul>
+    <button class="burger-btn" id="burgerBtn" aria-label="Toggle menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" aria-label="Close menu" onclick="toggleMenu()">×</button>
+    <nav class="mobile-nav">
+      <a href="index.html" class="active"><span class="hash">#</span>home</a>
+      <a href="projects.html"><span class="hash">#</span>projects</a>
+      <a href="about.html"><span class="hash">#</span>about-me</a>
+      <a href="contacts.html"><span class="hash">#</span>contacts</a>
+    </nav>
+    <div class="mobile-social">
+      <a href="https://github.com/chandanCC" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg></a>
+      <a href="https://linkedin.com/in/chandancc" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+      <a href="mailto:chandanchhouda.cc@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+    </div>
+  </div>
+  <script>
+    function toggleMenu() {
+      const btn = document.getElementById('burgerBtn');
+      const menu = document.getElementById('mobileMenu');
+      btn.classList.toggle('open');
+      menu.classList.toggle('open');
+      document.body.classList.toggle('menu-open');
+    }
+  </script>
+
+  <div class="page-wrap">
+    <div class="content">
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-left">
+          <p class="hero-eyebrow">Bengaluru, India &nbsp;·&nbsp; Senior Frontend Engineer</p>
+          <h1 class="hero-heading">
+            Chandan is a <span class="hl">Senior Frontend</span><br>
+            Engineer &amp; <span class="hl">React Specialist</span>
+          </h1>
+          <p class="hero-desc">
+            6+ years building high-performance React &amp; TypeScript interfaces
+            for high-volume CRM, SaaS, and security products. Specialised in
+            Webpack Module Federation, micro-frontends, and real-time UI.
+          </p>
+          <div>
+            <a href="contacts.html" class="hero-btn primary">Contact me !!</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-img-wrap">
+            <img src="logo-outline.svg" alt="" class="hero-deco-outline" aria-hidden="true" />
+            <img src="hero-bg.svg" alt="Chandan Chhouda" class="hero-img" />
+            <img src="dots.svg" alt="" class="hero-dots-svg" aria-hidden="true" />
+          </div>
+          <div class="hero-working">
+            <span class="dot"></span>
+            Currently building &nbsp;<strong>FlowOps</strong>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <div class="stats-row">
+        <div>
+          <div class="stat-val">6+</div>
+          <div class="stat-lbl">Years Experience</div>
+        </div>
+        <div>
+          <div class="stat-val">3</div>
+          <div class="stat-lbl">Companies</div>
+        </div>
+        <div>
+          <div class="stat-val">7</div>
+          <div class="stat-lbl">Products Shipped</div>
+        </div>
+        <div>
+          <div class="stat-val">40pt</div>
+          <div class="stat-lbl">Lighthouse Gain</div>
+        </div>
+        <div>
+          <div class="stat-val">35%</div>
+          <div class="stat-lbl">Triage Time Reduction</div>
+        </div>
+      </div>
+
+      <!-- QUOTE BLOCK -->
+      <div class="quote-block" style="position:relative;overflow:visible;">
+        <!-- Rectangle deco — right side -->
+        <div class="sec-rect-deco right" aria-hidden="true"></div>
+        <div class="quote-inner">
+          <span class="quote-open">"</span>
+          <p class="quote-text">Any fool can write code that a computer can understand.<br>Good programmers write code that humans can understand.</p>
+          <div class="quote-close-row">
+            <span class="quote-attr">— Martin Fowler</span>
+            <span class="quote-close">"</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- #projects -->
+      <section class="s" style="position:relative;overflow:visible;">
+        <!-- Dots deco — left edge (half-visible) -->
+        <img src="dots.svg" alt="" class="sec-dots-left" aria-hidden="true" />
+        <!-- Rectangle deco — right edge -->
+        <div class="sec-rect-deco right" aria-hidden="true"></div>
+        <div class="viewall-row">
+          <h2 class="section-h" style="margin-bottom:0"><span class="hash">#</span>projects<span class="hline"></span></h2>
+          <a href="projects.html" class="viewall-link">View all ——&gt;</a>
+        </div>
+        <br>
+        <div class="proj-grid">
+          <!-- Nouriq -->
+          <div class="proj-card">
+            <div class="proj-thumb thumb-nouriq">
+              <span class="proj-thumb-placeholder">[ screenshot ]</span>
+            </div>
+            <div class="proj-body">
+              <p class="proj-tech">React &nbsp; Node.js &nbsp; MongoDB &nbsp; AWS &nbsp; Gemini</p>
+              <h3 class="proj-name">Nouriq</h3>
+              <p class="proj-desc">AI-powered nutrition &amp; training tracker with daily/weekly/monthly goal analysis.</p>
+              <div class="proj-actions">
+                <a href="https://d1ctw8ugnbnbg1.cloudfront.net/" target="_blank" rel="noopener" class="proj-btn">Live ↗</a>
+              </div>
+            </div>
+          </div>
+          <!-- Arctic Wolf -->
+          <div class="proj-card">
+            <div class="proj-thumb thumb-arctic">
+              <span class="proj-thumb-placeholder">[ professional ]</span>
+            </div>
+            <div class="proj-body">
+              <p class="proj-tech">React 19 &nbsp; TypeScript &nbsp; WebSockets &nbsp; Webpack MF</p>
+              <h3 class="proj-name">Arctic Wolf — Threat Dashboard</h3>
+              <p class="proj-desc">Real-time 10,000-row security analytics UI at sub-100ms latency.</p>
+              <p class="proj-metric">↓ 35% analyst triage time</p>
+              <div class="proj-actions">
+                <span class="proj-btn disabled">Internal ↗</span>
+              </div>
+            </div>
+          </div>
+          <!-- FlowOps -->
+          <div class="proj-card">
+            <div class="proj-thumb thumb-flowops">
+              <span class="proj-thumb-placeholder">[ in progress ]</span>
+            </div>
+            <div class="proj-body">
+              <p class="proj-tech">React &nbsp; Node.js &nbsp; MongoDB &nbsp; Claude API</p>
+              <h3 class="proj-name">FlowOps <span class="badge-wip">WIP</span></h3>
+              <p class="proj-desc">AI SAAS tool to automate Program Manager workflows via configurable agents.</p>
+              <div class="proj-actions">
+                <span class="proj-btn disabled">Private ↗</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- #skills -->
+      <section class="s">
+        <h2 class="section-h"><span class="hash">#</span>skills<span class="hline"></span></h2>
+        <div class="skills-layout">
+          <div class="skills-deco">
+            <img src="dots.svg" alt="" class="skills-dots" aria-hidden="true" />
+            <div class="geo-rect geo-rect-1"></div>
+            <div class="geo-rect geo-rect-2"></div>
+            <div class="geo-rect geo-rect-3"></div>
+            <div class="geo-rect geo-rect-4"></div>
+            <img src="logo-outline.svg" alt="" class="skills-deco-logo skills-deco-logo-1" aria-hidden="true" />
+            <img src="logo-outline.svg" alt="" class="skills-deco-logo skills-deco-logo-2" aria-hidden="true" />
+            <img src="dots.svg" alt="" class="skills-dots skills-dots-2" aria-hidden="true" />
+          </div>
+          <div class="skills-table">
+            <div class="skill-block">
+              <p class="skill-block-name">Languages</p>
+              <ul class="skill-items">
+                <li>TypeScript</li>
+                <li>JavaScript</li>
+                <li>HTML5 / CSS3</li>
+              </ul>
+            </div>
+            <div class="skill-block">
+              <p class="skill-block-name">Frameworks</p>
+              <ul class="skill-items">
+                <li>React</li>
+                <li>TanStack Query</li>
+                <li>Redux Toolkit</li>
+              </ul>
+            </div>
+            <div class="skill-block">
+              <p class="skill-block-name">Build &amp; Arch</p>
+              <ul class="skill-items">
+                <li>Webpack</li>
+                <li>Module Federation</li>
+                <li>Vite / Rollup</li>
+              </ul>
+            </div>
+            <div class="skill-block">
+              <p class="skill-block-name">Databases</p>
+              <ul class="skill-items">
+                <li>MongoDB</li>
+                <li>REST APIs</li>
+                <li>WebSockets</li>
+              </ul>
+            </div>
+            <div class="skill-block">
+              <p class="skill-block-name">Tools</p>
+              <ul class="skill-items">
+                <li>GitHub Actions</li>
+                <li>Storybook</li>
+                <li>Playwright / Jest</li>
+              </ul>
+            </div>
+            <div class="skill-block">
+              <p class="skill-block-name">Styling</p>
+              <ul class="skill-items">
+                <li>Tailwind CSS</li>
+                <li>Material UI</li>
+                <li>SCSS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- #about-me -->
+      <section class="s" style="position:relative;overflow:visible;">
+        <!-- Logo-outline stack — left edge -->
+        <div class="sec-logos-left" aria-hidden="true">
+          <img src="logo-outline.svg" alt="" />
+          <img src="logo-outline.svg" alt="" />
+          <img src="logo-outline.svg" alt="" />
+        </div>
+        <!-- Dots — right edge -->
+        <img src="dots.svg" alt="" class="sec-dots-right" aria-hidden="true" />
+        <h2 class="section-h"><span class="hash">#</span>about-me<span class="hline"></span></h2>
+        <div class="about-grid">
+          <div>
+            <p class="about-text">
+              Front-End Engineer with <strong>6+ years</strong> building React and TypeScript UIs
+              for high-volume CRM and SaaS products. Specialised in
+              <strong>Webpack Module Federation</strong>, micro-frontends, virtualisation, and
+              real-time interfaces for large datasets — with measurable impact including a
+              <strong>40-point Lighthouse gain</strong>, <strong>70% faster deployments</strong>,
+              and <strong>50% fewer DB calls</strong>.
+            </p>
+            <a href="about.html" class="read-more">Read more ——&gt;</a>
+          </div>
+          <div class="about-deco">
+            <img src="dots.svg" alt="" class="about-dots-tr" aria-hidden="true" />
+            <img src="about-illustration.svg" alt="About illustration" class="about-illus" />
+            <img src="dots.svg" alt="" class="about-dots-bl" aria-hidden="true" />
+          </div>
+        </div>
+      </section>
+
+      <!-- #contacts -->
+      <section class="s">
+        <h2 class="section-h"><span class="hash">#</span>contacts<span class="hline"></span></h2>
+        <div class="contacts-grid">
+          <p class="contacts-intro">
+            I'm open to new opportunities, interesting projects, or just a good
+            frontend engineering conversation. Don't hesitate to reach out.
+          </p>
+          <div class="msg-box">
+            <p class="msg-box-title">Message me here</p>
+            <a href="https://linkedin.com/in/chandancc" target="_blank" rel="noopener" class="msg-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              linkedin.com/in/chandancc
+            </a>
+            <a href="mailto:chandanchhouda.cc@gmail.com" class="msg-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              chandanchhouda.cc@gmail.com
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-left">
+            <span class="footer-logo">⌘ CC</span>
+            <div>
+              <div style="font-size:0.8rem;font-weight:500">chandanchhouda.cc@gmail.com</div>
+              <div class="footer-info">Senior Frontend Engineer</div>
+            </div>
+          </div>
+          <div class="footer-right">
+            <span class="footer-media-label">Media</span>
+            <div class="footer-icons">
+              <a href="https://github.com/chandanCC" target="_blank" rel="noopener" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+              <a href="https://linkedin.com/in/chandancc" target="_blank" rel="noopener" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <p class="footer-copy">© Copyright 2026, Made by Chandan</p>
+      </footer>
+
+    </div><!-- /content -->
+  </div><!-- /page-wrap -->
+
+</body>
+</html>
