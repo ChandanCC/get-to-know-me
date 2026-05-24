@@ -135,6 +135,14 @@ const svg = `
         font-family="monospace" font-size="13" fill="${MUTED}">
     Arctic Wolf Networks · Yellow.ai · GeekyAnts
   </text>
+
+  <!-- CTA button — bottom right -->
+  <rect x="920" y="${H - 52}" width="200" height="36" rx="2"
+        fill="none" stroke="${ACCENT}" stroke-width="1.5"/>
+  <text x="1020" y="${H - 28}" text-anchor="middle"
+        font-family="monospace" font-size="14" fill="${ACCENT}">
+    View Portfolio &#x2192;
+  </text>
 </svg>`.trim();
 
 // ── Convert SVG → PNG via sharp ───────────────────────────────────────────────
