@@ -1,17 +1,18 @@
-import Image from "next/image";
 import Link from "next/link";
 import SectionHeading from "@/components/shared/SectionHeading";
 import SkillsSection from "@/components/shared/SkillsSection";
 import ProjectCard from "@/components/shared/ProjectCard";
+import { asset } from "@/lib/asset";
 import {
   HERO,
   STATS,
   QUOTE,
   PERSONAL_PROJECTS,
-  ABOUT_PREVIEW,
   HOME_CONTACTS_INTRO,
   OWNER,
 } from "@/data";
+
+/* eslint-disable @next/next/no-img-element */
 
 export default function Home() {
   return (
@@ -21,9 +22,11 @@ export default function Home() {
         <div className="hero-left">
           <p className="hero-eyebrow">{HERO.eyebrow}</p>
           <h1 className="hero-heading">
-            {HERO.heading.prefix} <span className="hl">{HERO.heading.hl1}</span>
+            {HERO.heading.prefix}{" "}
+            <span className="hl">{HERO.heading.hl1}</span>
             <br />
-            {HERO.heading.middle} <span className="hl">{HERO.heading.hl2}</span>
+            {HERO.heading.middle}{" "}
+            <span className="hl">{HERO.heading.hl2}</span>
           </h1>
           <p className="hero-desc">{HERO.description}</p>
           <div>
@@ -35,30 +38,9 @@ export default function Home() {
 
         <div className="hero-right">
           <div className="hero-img-wrap">
-            <Image
-              src="/logo-outline.svg"
-              alt=""
-              width={72}
-              height={72}
-              className="hero-deco-outline"
-              aria-hidden
-            />
-            <Image
-              src="/hero-bg.svg"
-              alt="Chandan Chhouda"
-              width={420}
-              height={420}
-              className="hero-img"
-              priority
-            />
-            <Image
-              src="/dots.svg"
-              alt=""
-              width={84}
-              height={84}
-              className="hero-dots-svg"
-              aria-hidden
-            />
+            <img src={asset("/logo-outline.svg")} alt="" className="hero-deco-outline" aria-hidden />
+            <img src={asset("/hero-bg.svg")} alt="Chandan Chhouda" className="hero-img" />
+            <img src={asset("/dots.svg")} alt="" className="hero-dots-svg" aria-hidden />
           </div>
           <div className="hero-working">
             <span className="dot" />
@@ -84,10 +66,7 @@ export default function Home() {
           <span className="quote-open">&ldquo;</span>
           <p className="quote-text">
             {QUOTE.text.split("\n").map((line, i, arr) => (
-              <span key={i}>
-                {line}
-                {i < arr.length - 1 && <br />}
-              </span>
+              <span key={i}>{line}{i < arr.length - 1 && <br />}</span>
             ))}
           </p>
           <div className="quote-close-row">
@@ -99,15 +78,13 @@ export default function Home() {
 
       {/* ── #projects (preview) ── */}
       <section className="s" style={{ position: "relative", overflow: "visible" }}>
-        <Image src="/dots.svg" alt="" width={84} height={84} className="sec-dots-left" aria-hidden />
+        <img src={asset("/dots.svg")} alt="" className="sec-dots-left" aria-hidden />
         <div className="sec-rect-deco right" aria-hidden />
         <div className="viewall-row">
           <h2 className="section-h" style={{ marginBottom: 0 }}>
             <span className="hash">#</span>projects<span className="hline" />
           </h2>
-          <Link href="/projects" className="viewall-link">
-            View all ——&gt;
-          </Link>
+          <Link href="/projects" className="viewall-link">View all ——&gt;</Link>
         </div>
         <br />
         <div className="proj-grid">
@@ -123,11 +100,11 @@ export default function Home() {
       {/* ── #about-me (preview) ── */}
       <section className="s" style={{ position: "relative", overflow: "visible" }}>
         <div className="sec-logos-left" aria-hidden>
-          <Image src="/logo-outline.svg" alt="" width={56} height={56} />
-          <Image src="/logo-outline.svg" alt="" width={56} height={56} />
-          <Image src="/logo-outline.svg" alt="" width={56} height={56} />
+          <img src={asset("/logo-outline.svg")} alt="" />
+          <img src={asset("/logo-outline.svg")} alt="" />
+          <img src={asset("/logo-outline.svg")} alt="" />
         </div>
-        <Image src="/dots.svg" alt="" width={84} height={84} className="sec-dots-right" aria-hidden />
+        <img src={asset("/dots.svg")} alt="" className="sec-dots-right" aria-hidden />
         <SectionHeading label="about-me" />
         <div className="about-grid">
           <div>
@@ -136,23 +113,16 @@ export default function Home() {
               for high-volume CRM and SaaS products. Specialised in{" "}
               <strong>Webpack Module Federation</strong>, micro-frontends, virtualisation, and
               real-time interfaces for large datasets — with measurable impact including a{" "}
-              <strong>40-point Lighthouse gain</strong>, <strong>70% faster deployments</strong>,
-              and <strong>50% fewer DB calls</strong>.
+              <strong>40-point Lighthouse gain</strong>,{" "}
+              <strong>70% faster deployments</strong>, and{" "}
+              <strong>50% fewer DB calls</strong>.
             </p>
-            <Link href="/about" className="read-more">
-              Read more ——&gt;
-            </Link>
+            <Link href="/about" className="read-more">Read more ——&gt;</Link>
           </div>
           <div className="about-deco">
-            <Image src="/dots.svg" alt="" width={84} height={84} className="about-dots-tr" aria-hidden />
-            <Image
-              src="/about-illustration.svg"
-              alt="About illustration"
-              width={260}
-              height={260}
-              className="about-illus"
-            />
-            <Image src="/dots.svg" alt="" width={84} height={84} className="about-dots-bl" aria-hidden />
+            <img src={asset("/dots.svg")} alt="" className="about-dots-tr" aria-hidden />
+            <img src={asset("/about-illustration.svg")} alt="About illustration" className="about-illus" />
+            <img src={asset("/dots.svg")} alt="" className="about-dots-bl" aria-hidden />
           </div>
         </div>
       </section>

@@ -1,20 +1,18 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { GitHubIcon, LinkedInIcon, EmailIcon } from "@/components/shared/Icons";
 import { NAV_LINKS, OWNER } from "@/data";
+import { asset } from "@/lib/asset";
 
 export default function Nav() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
-  // Close on route change
   useEffect(() => { setOpen(false); }, [pathname]);
 
-  // Lock body scroll when menu is open
   useEffect(() => {
     document.body.classList.toggle("menu-open", open);
     return () => { document.body.classList.remove("menu-open"); };
@@ -28,7 +26,8 @@ export default function Nav() {
       <nav className="topnav">
         <Link href="/" className="nav-logo">
           <span className="logo-icon">
-            <Image src="/logo-default.svg" alt="CC" width={24} height={24} className="logo-svg" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={asset("/logo-default.svg")} alt="CC" width={24} height={24} className="logo-svg" />
           </span>
           CC
         </Link>
@@ -52,7 +51,6 @@ export default function Nav() {
         </button>
       </nav>
 
-      {/* Mobile overlay */}
       <div className={`mobile-menu${open ? " open" : ""}`}>
         <button className="mobile-close" aria-label="Close menu" onClick={() => setOpen(false)}>
           ×
@@ -65,15 +63,9 @@ export default function Nav() {
           ))}
         </nav>
         <div className="mobile-social">
-          <a href={OWNER.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <GitHubIcon />
-          </a>
-          <a href={OWNER.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <LinkedInIcon />
-          </a>
-          <a href={`mailto:${OWNER.email}`} aria-label="Email">
-            <EmailIcon />
-          </a>
+          <a href={OWNER.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub"><GitHubIcon /></a>
+          <a href={OWNER.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><LinkedInIcon /></a>
+          <a href={`mailto:${OWNER.email}`} aria-label="Email"><EmailIcon /></a>
         </div>
       </div>
     </>

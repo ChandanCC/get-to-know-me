@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
+import { asset } from "@/lib/asset";
 import type { ReactNode } from "react";
 import SectionHeading from "@/components/shared/SectionHeading";
 import SkillsSection from "@/components/shared/SkillsSection";
@@ -66,15 +66,11 @@ export default function AboutPage() {
             </Link>
           </div>
           <div className="about-deco">
-            <Image src="/dots.svg" alt="" width={84} height={84} className="about-dots-tr" aria-hidden />
-            <Image
-              src="/about-illustration.svg"
-              alt="About illustration"
-              width={260}
-              height={260}
-              className="about-illus"
-            />
-            <Image src="/dots.svg" alt="" width={84} height={84} className="about-dots-bl" aria-hidden />
+            {/* eslint-disable @next/next/no-img-element */}
+            <img src={asset("/dots.svg")} alt="" width={84} height={84} className="about-dots-tr" aria-hidden />
+            <img src={asset("/about-illustration.svg")} alt="About illustration" width={260} height={260} className="about-illus" />
+            <img src={asset("/dots.svg")} alt="" width={84} height={84} className="about-dots-bl" aria-hidden />
+            {/* eslint-enable @next/next/no-img-element */}
           </div>
         </div>
       </section>
