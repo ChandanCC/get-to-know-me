@@ -48,6 +48,7 @@ export const metadata: Metadata = {
   verification: { google: "99RQCULT8N4Go745R6FyGAzmTY7Zg-khRlWek1ghy3U" },
   openGraph: {
     type: "website",
+    url: "https://chandancc.github.io/get-to-know-me",
     siteName: "Chandan Chhouda",
     title: "Chandan Chhouda | Senior Frontend Engineer · React",
     description:
