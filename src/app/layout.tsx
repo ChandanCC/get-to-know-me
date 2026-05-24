@@ -4,6 +4,37 @@ import Nav from "@/components/layout/Nav";
 import LeftStrip from "@/components/layout/LeftStrip";
 import Footer from "@/components/layout/Footer";
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Chandan Chhouda",
+  jobTitle: "Senior Frontend Engineer",
+  url: "https://chandancc.github.io/get-to-know-me",
+  email: "chandanchhouda.cc@gmail.com",
+  image: "https://chandancc.github.io/get-to-know-me/hero-bg.svg",
+  sameAs: [
+    "https://linkedin.com/in/chandancc",
+    "https://github.com/chandanCC",
+  ],
+  knowsAbout: [
+    "React",
+    "TypeScript",
+    "Webpack Module Federation",
+    "Micro-frontends",
+    "Node.js",
+    "Performance Optimisation",
+  ],
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Bengaluru",
+    addressCountry: "IN",
+  },
+  worksFor: {
+    "@type": "Organization",
+    name: "Arctic Wolf Networks",
+  },
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://chandancc.github.io/get-to-know-me"),
   title: {
@@ -34,6 +65,12 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body>
         <LeftStrip />
         <Nav />

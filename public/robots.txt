@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chandancc.github.io/get-to-know-me/sitemap.xml
