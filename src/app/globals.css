@@ -441,11 +441,16 @@ nav.topnav {
   color: var(--text-dim);
   letter-spacing: 0.08em;
 }
-.thumb-nouriq   { background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%); }
-.thumb-flowops  { background: linear-gradient(135deg, #1a2a1a 0%, #0d3b0d 100%); }
-.thumb-builderx { background: linear-gradient(135deg, #1a1a2a, #2a1a3a); }
-.thumb-arctic   { background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%); }
-.thumb-yellow   { background: linear-gradient(135deg, #2a2000 0%, #5c4d00 100%); }
+.thumb-nouriq     { background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%); }
+.thumb-flowops    { background: linear-gradient(135deg, #1a2a1a 0%, #0d3b0d 100%); }
+.thumb-portfolio  { background: linear-gradient(135deg, #1e1e28 0%, #2a2a40 100%); }
+.thumb-builderx   { background: linear-gradient(135deg, #1a1a2a, #2a1a3a); }
+.thumb-arctic     { background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%); }
+.thumb-yellow     { background: linear-gradient(135deg, #2a2000 0%, #5c4d00 100%); }
+
+/* 4th home-page project card: visible on tablet/mobile, hidden on desktop */
+.home-proj-mobile-only { display: none; }
+@media (max-width: 960px) { .home-proj-mobile-only { display: flex; } }
 
 .proj-body { padding: 1rem 1.25rem 1.25rem; flex: 1; display: flex; flex-direction: column; }
 .proj-tech {

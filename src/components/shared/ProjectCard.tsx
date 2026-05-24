@@ -3,13 +3,14 @@ import type { Project } from "@/types";
 
 interface Props {
   project: Project;
+  className?: string;
 }
 
-export default function ProjectCard({ project }: Props) {
+export default function ProjectCard({ project, className }: Props) {
   const techItems = project.tech.split(/\s{2,}/);
 
   return (
-    <div className="proj-card">
+    <div className={`proj-card${className ? ` ${className}` : ""}`}>
       <div className={`proj-thumb ${project.thumbClass}`}>
         <span className="proj-thumb-placeholder">{project.thumbLabel}</span>
       </div>

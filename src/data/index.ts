@@ -210,6 +210,21 @@ export const PERSONAL_PROJECTS: Project[] = [
     action: { label: "Private Repo", disabled: true },
   },
   {
+    id: "portfolio",
+    name: "get-to-know-me — Portfolio",
+    tech: "Next.js   TypeScript   CSS   GitHub Actions",
+    description:
+      "This portfolio site — built with Next.js static export, typed data layer, and deployed to GitHub Pages via Actions. Pixel-faithful port of a handcrafted HTML/CSS design.",
+    thumbClass: "thumb-portfolio",
+    thumbLabel: "[ live site ]",
+    status: "live",
+    action: {
+      label: "Live ↗",
+      href: "https://chandancc.github.io/get-to-know-me/",
+      disabled: false,
+    },
+  },
+  {
     id: "builderx",
     name: "BuilderX — Monaco Plugin",
     tech: "React   TypeScript   Monaco Editor   CSS",

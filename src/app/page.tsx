@@ -88,8 +88,8 @@ export default function Home() {
         </div>
         <br />
         <div className="proj-grid">
-          {PERSONAL_PROJECTS.map((p) => (
-            <ProjectCard key={p.id} project={p} />
+          {PERSONAL_PROJECTS.map((p, i) => (
+            <ProjectCard key={p.id} project={p} className={i === 3 ? "home-proj-mobile-only" : undefined} />
           ))}
         </div>
       </section>
