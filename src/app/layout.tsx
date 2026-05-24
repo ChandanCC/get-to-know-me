@@ -45,6 +45,7 @@ export const metadata: Metadata = {
   description:
     "Senior Frontend Engineer with 6+ years building React and TypeScript UIs for high-volume CRM and SaaS products. Specialised in Webpack Module Federation, micro-frontends, and real-time interfaces.",
   authors: [{ name: "Chandan Chhouda" }],
+  verification: { google: "99RQCULT8N4Go745R6FyGAzmTY7Zg-khRlWek1ghy3U" },
   openGraph: {
     type: "website",
     siteName: "Chandan Chhouda",
