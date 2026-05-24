@@ -52,12 +52,14 @@ export const metadata: Metadata = {
     title: "Chandan Chhouda | Senior Frontend Engineer",
     description:
       "6+ years building high-performance React & TypeScript interfaces for complex, real-time products.",
+    images: [{ url: "/get-to-know-me/og-image.png", width: 1200, height: 630, alt: "Chandan Chhouda — Senior Frontend Engineer" }],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Chandan Chhouda | Senior Frontend Engineer",
     description:
       "6+ years building high-performance React & TypeScript interfaces for complex, real-time products.",
+    images: ["/get-to-know-me/og-image.png"],
   },
 };
 
