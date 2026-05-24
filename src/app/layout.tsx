@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Nav from "@/components/layout/Nav";
+import LeftStrip from "@/components/layout/LeftStrip";
+import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://chandancc.github.io/get-to-know-me"),
@@ -28,12 +31,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <LeftStrip />
+        <Nav />
+        <div className="page-wrap">
+          <div className="content">
+            {children}
+            <Footer />
+          </div>
+        </div>
+      </body>
     </html>
   );
 }
