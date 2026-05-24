@@ -49,17 +49,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Chandan Chhouda",
-    title: "Chandan Chhouda | Senior Frontend Engineer",
+    title: "Chandan Chhouda | Senior Frontend Engineer — React & TypeScript",
     description:
-      "6+ years building high-performance React & TypeScript interfaces for complex, real-time products.",
-    images: [{ url: "/get-to-know-me/og-image.png", width: 1200, height: 630, alt: "Chandan Chhouda — Senior Frontend Engineer" }],
+      "6+ years building high-performance React & TypeScript UIs. Specialised in Webpack Module Federation, micro-frontends, and real-time interfaces for large-scale SaaS products.",
+    images: [{ url: "https://chandancc.github.io/get-to-know-me/og-image.png", width: 1200, height: 630, alt: "Chandan Chhouda — Senior Frontend Engineer" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Chandan Chhouda | Senior Frontend Engineer",
+    title: "Chandan Chhouda | Senior Frontend Engineer — React & TypeScript",
     description:
-      "6+ years building high-performance React & TypeScript interfaces for complex, real-time products.",
-    images: ["/get-to-know-me/og-image.png"],
+      "6+ years building high-performance React & TypeScript UIs. Specialised in Webpack Module Federation, micro-frontends, and real-time interfaces for large-scale SaaS products.",
+    images: ["https://chandancc.github.io/get-to-know-me/og-image.png"],
   },
 };
 
