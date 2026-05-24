@@ -448,9 +448,10 @@ nav.topnav {
 .thumb-arctic     { background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%); }
 .thumb-yellow     { background: linear-gradient(135deg, #2a2000 0%, #5c4d00 100%); }
 
-/* 4th home-page project card: visible on tablet/mobile, hidden on desktop */
+/* 4th home-page project card: visible on tablet (2×2) only */
 .home-proj-mobile-only { display: none; }
-@media (max-width: 960px) { .home-proj-mobile-only { display: flex; } }
+@media (max-width: 960px)                    { .home-proj-mobile-only { display: flex; } }
+@media (max-width: 640px)                    { .home-proj-mobile-only { display: none; } }
 
 .proj-body { padding: 1rem 1.25rem 1.25rem; flex: 1; display: flex; flex-direction: column; }
 .proj-tech {
