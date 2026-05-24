@@ -136,12 +136,13 @@ const svg = `
     Arctic Wolf Networks · Yellow.ai · GeekyAnts
   </text>
 
-  <!-- CTA button — bottom right -->
-  <rect x="920" y="${H - 52}" width="200" height="36" rx="2"
-        fill="none" stroke="${ACCENT}" stroke-width="1.5"/>
-  <text x="1020" y="${H - 28}" text-anchor="middle"
-        font-family="monospace" font-size="14" fill="${ACCENT}">
-    View Portfolio &#x2192;
+  <!-- CTA button — solid filled, bottom right -->
+  <rect x="900" y="${H - 58}" width="220" height="46" rx="4"
+        fill="${ACCENT}"/>
+  <text x="1010" y="${H - 28}" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="16" font-weight="700"
+        fill="${WHITE}">
+    View Portfolio →
   </text>
 </svg>`.trim();
 
