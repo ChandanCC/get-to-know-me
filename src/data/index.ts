@@ -27,22 +27,22 @@ export const OWNER = {
   email: "chandanchhouda.cc@gmail.com",
   linkedin: "https://linkedin.com/in/chandancc",
   github: "https://github.com/chandanCC",
-  resumePath: "/chandan_resume_2026.pdf",
+  resumePath: "/Chandan_Chhouda_Resume_2026.pdf",
 } as const;
 
 // ---- Navigation ----
 
 export const NAV_LINKS: NavLink[] = [
-  { href: "/",         label: "home",       key: "home" },
-  { href: "/projects", label: "projects",   key: "projects" },
-  { href: "/about",    label: "about-me",   key: "about" },
-  { href: "/contacts", label: "contacts",   key: "contacts" },
+  { href: "/", label: "home", key: "home" },
+  { href: "/projects", label: "projects", key: "projects" },
+  { href: "/about", label: "about-me", key: "about" },
+  { href: "/contacts", label: "contacts", key: "contacts" },
 ];
 
 // ---- Social strip ----
 
 export const SOCIAL_LINKS: SocialLink[] = [
-  { href: OWNER.github,   title: "GitHub",   type: "github" },
+  { href: OWNER.github, title: "GitHub", type: "github" },
   { href: OWNER.linkedin, title: "LinkedIn", type: "linkedin" },
   { href: `mailto:${OWNER.email}`, title: "Email", type: "email" },
 ];
@@ -66,10 +66,10 @@ export const HERO = {
 // ---- Stats ----
 
 export const STATS: Stat[] = [
-  { value: "6+",  label: "Years Experience" },
-  { value: "3",   label: "Companies" },
-  { value: "7",   label: "Products Shipped" },
-  { value: "40pt",label: "Lighthouse Gain" },
+  { value: "6+", label: "Years Experience" },
+  { value: "3", label: "Companies" },
+  { value: "7", label: "Products Shipped" },
+  { value: "40pt", label: "Lighthouse Gain" },
   { value: "35%", label: "Triage Time Reduction" },
 ];
 
@@ -83,12 +83,12 @@ export const QUOTE: Quote = {
 // ---- Skills ----
 
 export const SKILLS: SkillBlock[] = [
-  { category: "Languages",   items: ["TypeScript", "JavaScript", "HTML5 / CSS3"] },
-  { category: "Frameworks",  items: ["React", "TanStack Query v5", "Redux Toolkit"] },
-  { category: "Build & Arch",items: ["Webpack", "Module Federation", "Vite / Rollup"] },
-  { category: "Databases",   items: ["MongoDB", "REST APIs", "WebSockets"] },
-  { category: "Tools",       items: ["GitHub Actions", "Storybook", "Playwright / Jest"] },
-  { category: "Styling",     items: ["Tailwind CSS", "Material UI", "SCSS"] },
+  { category: "Languages", items: ["TypeScript", "JavaScript", "HTML5 / CSS3"] },
+  { category: "Frameworks", items: ["React", "TanStack Query v5", "Redux Toolkit"] },
+  { category: "Build & Arch", items: ["Webpack", "Module Federation", "Vite / Rollup"] },
+  { category: "Databases", items: ["MongoDB", "REST APIs", "WebSockets"] },
+  { category: "Tools", items: ["GitHub Actions", "Storybook", "Playwright / Jest"] },
+  { category: "Styling", items: ["Tailwind CSS", "Material UI", "SCSS"] },
 ];
 
 // ---- About (home preview) ----
@@ -273,9 +273,9 @@ export const PROFESSIONAL_PROJECTS: Project[] = [
 // ---- Contacts page ----
 
 export const CONTACT_ROWS: ContactRow[] = [
-  { label: "EMAIL",    value: OWNER.email,    href: `mailto:${OWNER.email}` },
+  { label: "EMAIL", value: OWNER.email, href: `mailto:${OWNER.email}` },
   { label: "LINKEDIN", value: "linkedin.com/in/chandancc", href: OWNER.linkedin },
-  { label: "GITHUB",   value: "github.com/chandanCC",      href: OWNER.github },
+  { label: "GITHUB", value: "github.com/chandanCC", href: OWNER.github },
 ];
 
 export const AVAILABILITY_TEXT =
